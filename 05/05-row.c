@@ -13,8 +13,8 @@ int main(int argc, char *argv[]) {
   unsigned int *array = malloc(SIZE * SIZE * sizeof(unsigned int));
 
   // Add data to each element of the array:
-  for (unsigned int c = 0; c < SIZE; c++) {
-    for (unsigned int r = 0; r < SIZE; r++) {
+  for (unsigned int r = 0; r < SIZE; r++) {
+    for (unsigned int c = 0; c < SIZE; c++) {
       array[(r * SIZE) + c] = (r * SIZE) + c;
     }
   }
