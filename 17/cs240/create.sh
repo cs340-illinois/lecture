@@ -1,0 +1,1 @@
+echo "Bye" >bye.txt

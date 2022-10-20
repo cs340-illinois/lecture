@@ -1,0 +1,3 @@
+FROM alpine
+COPY cs340 /inside-of-docker-filesystem
+ENTRYPOINT ["/bin/sh"]

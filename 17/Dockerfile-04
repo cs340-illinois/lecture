@@ -1,0 +1,5 @@
+FROM alpine
+COPY cs340 /inside-of-docker-filesystem
+WORKDIR /inside-of-docker-filesystem
+RUN create.sh
+ENTRYPOINT ["/bin/sh"]
