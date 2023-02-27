@@ -67,7 +67,7 @@ int main() {
   // continue to accept new connections forever:
   while (1) {
     struct sockaddr_in client_address;
-    int client_addr_len;
+    socklen_t client_addr_len = sizeof(struct sockaddr_in);
 
     // accept:
     int *fd = malloc(sizeof(int));
